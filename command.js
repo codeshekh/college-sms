@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-
-// Use dynamic import for inquirer
 import('inquirer').then(({ createPromptModule }) => {
     const { Command } = require('commander');
-    const { AddStudent, FindStudent, UpdateStudent, RemoveStudent, ListStudents } = require('./index.js');
+    const { AddStudent, FindStudent, UpdateStudent, RemoveStudent, ListStudents } = require('./index');
 
     const prompt = createPromptModule();
 
@@ -15,7 +13,6 @@ import('inquirer').then(({ createPromptModule }) => {
         { type: 'input', name: 'phone', message: 'Student phone number' },
     ];
 
-    // Create a new commander Command
     const program = new Command();
 
     program
