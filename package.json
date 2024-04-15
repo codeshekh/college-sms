@@ -1,0 +1,26 @@
+{
+  "name": "cli_toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepandeyop/cli_toolkit.git"
+  },
+  "author": "Abhishek Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepandeyop/cli_toolkit/issues"
+  },
+  "homepage": "https://github.com/thepandeyop/cli_toolkit#readme",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.18",
+    "mongoose": "^8.3.1"
+  }
+}
